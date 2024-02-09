@@ -7,7 +7,7 @@ contract SimpleStorage {
     // struct --> object
 
     // variable
-    uint256 number = 789;
+    uint256 public number = 789;
 
     // funcion
     function showNumber(uint256 num) public view returns(uint256) {        
