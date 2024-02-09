@@ -44,7 +44,8 @@ contract SimpleStorage {
     // with a key of name provided and value of age.
     mapping(string => uint256) public nameToAge;
 
-    function mapAgeToName(string memory _name, uint256 age) public {
+    // The virtual keyword means that the function can be overriden.
+    function mapAgeToName(string memory _name, uint256 age) public virtual {
         nameToAge[_name] = age;
     }
 
